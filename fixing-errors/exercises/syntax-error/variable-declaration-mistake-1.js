@@ -10,11 +10,12 @@
 
   life cycle:
 
-  the mistake:
+  the mistake:the vaariable name "tree" declared two times, we can't declare one variable two times with different value
 
-  the fix(es):
+  the fix(es): assign the value of the the first variable value 
 */
 
 let tree = 'oak';
 
-let tree = 'birch';
+ tree = 'birch';
+ console.log(tree);

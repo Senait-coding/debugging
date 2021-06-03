@@ -10,11 +10,11 @@
 
   life cycle:
 
-  the mistake:
+  the mistake:the 'welf' was not declared
 
-  the fix(es):
+  the fix(es):declare "welf" 
 */
 
-welf = 'ingrad';
+let welf = 'ingrad';
 
 console.log(welf);

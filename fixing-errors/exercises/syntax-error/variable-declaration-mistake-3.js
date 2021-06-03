@@ -10,9 +10,9 @@
 
   life cycle:
 
-  the mistake:
+  the mistake: name of the variable is missing 
 
-  the fix(es):
+  the fix(es): give a name to const variable 
 */
 
-const = 'always be learning';
+const x = 'always be learning';

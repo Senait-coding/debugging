@@ -10,14 +10,14 @@
 
   life cycle:
 
-  the mistake:
+  the mistake: the const was undefined 
 
-  the fix(es):
+  the fix(es):relace the const by let 
 */
 
-const userName = 'qopiznu';
-
-const path;
+//const userName = 'qopiznu';
+const userName = 'qop';
+let path;
 
 if (userName.length > 4) {
   path = 'if';

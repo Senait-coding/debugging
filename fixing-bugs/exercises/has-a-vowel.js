@@ -35,7 +35,7 @@ for (const char of characters) {
   }
 }
 
-if (hasAVowel) {
+if (!hasAVowel) {
   alert('"' + characters + '" has at least one vowel');
 } else {
   alert('"' + characters + '" has no vowels');

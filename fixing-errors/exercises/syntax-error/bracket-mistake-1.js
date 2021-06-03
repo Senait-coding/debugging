@@ -11,14 +11,14 @@
 
   life cycle:
 
-  the mistake:
+  the mistake: closing curl braket was missing 
 
-  the fix(es):
+  the fix(es): colosed curl braket added
 */
 
 
 
 for (let i = 0; i < 5; i++) {
-  console.log(i);
+  console.log(i);}
 
 
