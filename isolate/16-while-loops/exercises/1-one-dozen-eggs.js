@@ -3,8 +3,8 @@ console.log('-- begin --');
 
 /* fill in the blanks to pass the assertions */
 
-const oneDozen = _;
-const twoMore = _;
+const oneDozen = 12;
+const twoMore = 3;
 let numberOfEggs = 0;
 
 while (numberOfEggs !== oneDozen) {

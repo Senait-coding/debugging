@@ -9,10 +9,14 @@ let a = 'y';
 let b = 'x';
 let temp;
 
-temp = a;
-const c = temp;
+temp = a;//y
+const c = temp;//y
 
 // write some code, be sure to use temp!
+a=b;//x
+b=c;//y
+temp=c;
+
 
 // replace the _ with a value to pass the assertions
 
@@ -22,10 +26,10 @@ console.assert(isTrue1, 'Test 1');
 const isTrue2 = b === 'y';
 console.assert(isTrue2, 'Test 2');
 
-const isTrue3 = c === _;
+const isTrue3 = c === 'y';
 console.assert(isTrue3, 'Test 3');
 
-const isTrue4 = temp === _;
+const isTrue4 = temp === 'y';
 console.assert(isTrue4, 'Test 4');
 
 

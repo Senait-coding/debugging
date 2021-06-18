@@ -9,9 +9,9 @@
     at Object.console (study-with.js:58)
     at JavaScriptFE.studyWith (javascript-class.js:463)
     at HTMLButtonElement.<anonymous> (javascript-class.js:290)
-  life cycle: excution phase
-  the mistake:'inValidUserName is declared after initalization
-  the fix(es):declare before initalize
+  life cycle: execution phase
+  the mistake:'inValidUserName is declared after initialization
+  the fix(es):declare before initialized
 */
 const userName = 'chiobin';
 console.log('userName:', typeof userName, userName);

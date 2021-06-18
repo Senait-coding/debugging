@@ -4,24 +4,24 @@ alert(
     '- player 2: says something cool about it'
 );
 
-let _a = null;
-while (_a === null) {
-  _a = prompt('enter an animal');
+let userInput = null;
+while (userInput === null) {
+  userInput = prompt('enter an animal');
 }
 
-let _b = '';
+let animalNameInput = '';
 
-let _c = false;
-while (!_c) {
-  _b = prompt('tell me something about ' + _a);
+let isNotAnimalName = false;
+while (!isNotAnimalName) {
+  animalNameInput = prompt('tell me something about ' + userInput);
 
-  if (_b === '' || _b === null) {
+  if (animalNameInput === '' || animalNameInput === null) {
     alert('that is not something');
-  } else if (_b.toLowerCase().includes(_a.toLowerCase())) {
-    _c = true;
+  } else if (animalNameInput.toLowerCase().includes(userInput.toLowerCase())) {
+    isNotAnimalName = true;
   } else {
-    alert('nope, not about ' + _a + '.  try again.');
+    alert('nope, not about ' + userInput + '.  try again.');
   }
 }
 
-alert('i just learned something cool about ' + _a + '!\n\n- "' + _b + '"');
+alert('i just learned something cool about ' + userInput + '!\n\n- "' + animalNameInput + '"');

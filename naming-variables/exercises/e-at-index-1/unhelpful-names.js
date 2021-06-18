@@ -1,22 +1,22 @@
-alert('you will need to _d strings with "e" in the right place');
+alert('you will need to userInput strings with "e" in the right place');
 
-let _a = 0;
+let inputIndex = 0;
 
-let _b = 'entries:';
+let inputCheck = 'entries:';
 
-let _c = true;
-while (_c) {
-  const _d = prompt('_d a string with "e" at index ' + _a);
+let userInputWithe = true;
+while (userInputWithe) {
+  const userInput = prompt('userInput a string with "e" at index ' + inputIndex);
 
-  if (_d === null) {
-    _c = !confirm('are you sure you want to exit?');
-  } else if (_d[_a] === 'e') {
-    _b = _b + '\n' + _a + '. "' + _d + '"';
-    _a = _a + 1;
+  if (userInput === null) {
+    userInputWithe = !confirm('are you sure you want to exit?');
+  } else if (userInput[inputIndex] === 'e') {
+    inputCheck = inputCheck + '\n' + inputIndex + '. "' + userInput + '"';
+    inputIndex = inputIndex + 1;
   } else {
-    _b = _b + '\nx. "' + _d + '"';
-    _c = false;
+    inputCheck = inputCheck + '\nx. "' + userInput + '"';
+    userInputWithe = false;
   }
 }
 
-alert('your score: ' + _a + '\n\n' + _b);
+alert('your score: ' + inputIndex + '\n\n' + inputCheck);

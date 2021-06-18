@@ -4,7 +4,7 @@ let validInput = '';
 
 let index = 0;
 while (validInput === '') {
-  index = _ + 1;
+  index = 0 + 1;
 
   const userInput = prompt(
     `enter anything with "e" or "E" as the ${index}th letter`
@@ -12,12 +12,12 @@ while (validInput === '') {
 
   if (userInput === null || userInput === '') {
     alert('that is nothing');
-  } else if (userInput.length < _) {
+  } else if (userInput.length < 3) {
     alert('too short');
-  } else if (userInput[_] === 'e' || userInput[_] === 'E') {
-    _ = userInput;
+  } else if (userInput[0] === 'e' || userInput[0] === 'E') {
+    validInput = userInput;
   } else {
-    alert(_);
+    alert('try again');
   }
 }
 
